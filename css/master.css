@@ -1,0 +1,186 @@
+@import "desktop.css";
+/* main grid is mobile because mobileFirst */
+.grid{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows:1fr 0.25fr auto 0.125fr;
+  grid-template-areas:
+  "nav" /* NAVBAR */
+  "head" /* HEADER */
+  "cont" /* CONTENT */
+  "foot"/* FOOTER */;
+}
+.skillboxy,.certifikaty,.contactboxy,.carousell,.mapa{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* color scheme */
+#nope{
+  color: #373f51; /* dark */
+  color: #477998; /* blue */
+  color: #dfd5a5; /* light */
+  color: #b3c5d7; /* gray */
+  color: #008dd5; /* blue */
+}
+
+/* background color */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #477998;
+}
+/* primary layout elements color */
+nav,header,main,footer{
+  background-color: #b3c5d7;
+}
+
+/* background of inactive navbar items */
+nav>li{
+  background-color:#008dd5;
+  color: white;
+  padding: 0;
+}
+
+/* elements on hover */
+nav > li:hover {
+  background-color: #373f51;
+  color: white;
+}
+
+/* background */
+body {
+  background-image: url("./../img/bg.gif");
+  background-repeat: repeat;
+}
+
+/* NAVBAR container */
+nav{
+  grid-area: nav;
+  text-align: center;
+}
+
+/* NAVBAR items */
+nav > li {
+  list-style-type: none;
+  border-radius: 2.5px;
+  margin: 0;
+  padding: 5px;
+}
+
+nav > li > a, nav > li > a:visited{
+  text-decoration: none;
+  font-size: 2em;
+  color: inherit;
+  display: block;
+}
+/* HEADER container */
+header{
+  grid-area: head;
+}
+
+/* HEADER item */
+h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+}
+
+/* CONTENT container */
+main {
+  grid-area: cont;
+  padding: 20px;
+}
+
+.skillbox {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+
+.certifikat {
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+
+.certifikat > img {
+  width: 350px;
+  height: 200px;
+}
+
+/* FOOTER container */
+footer{
+  grid-area: foot;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+
+/* centering HEADER and FOOTER items */
+header,footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* if screen exceeds 800 px apply desktop css*/
+@media (min-width: 800px) {
+  .grid{
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 12fr 1fr;
+    grid-template-rows: 4fr 0.5fr 3fr 0.5fr minmax(400px,auto) 0.5fr 1fr;
+    grid-template-areas:
+    "nav nav  nav"
+    "... ...  ..."
+    "... head ..."
+    "... ...  ..."
+    "... cont ..."
+    "... ...  ... "
+    "... foot ...";
+  }
+  /* navigation bar and its components*/
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contactboxy,.skillboxy,.certifikaty,nav{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .skillboxy {
+    min-height: 225px;
+    height: auto;
+  }
+  .skillbox{
+    height: 225px;
+    width: 225px;
+  }
+
+  nav > li,.certifikat,.skillbox{
+    transition: all .2s ease-in-out;
+  }
+
+  /* NAVBAR items:hover */
+  nav > li:hover, .certifikat:hover, .skillbox:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* dev CSS */
+.skillbox,.certifikat,.contactbox,.carousell,.mapa{border-style: dotted;}
+.certifikaty,.contactboxy,.carousell,.mapa{min-height: 400px;}
