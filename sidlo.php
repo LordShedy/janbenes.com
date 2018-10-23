@@ -6,8 +6,10 @@ include './parts/nav.php';
         <h1>Zde mě můžete najít</h1>
       </header>
       <main>
-        <div class="mapa" id="m" style="height:380px"></div>
-        <script type="text/javascript" href="./js/mapyapi.js" ></script>
+        <div id="m"></div>
+        <script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
+        <script type="text/javascript">Loader.load(null, {pano: true});</script>
+        <script type="text/javascript" src="./js/mapyapi.js"></script>
 <?php
 include './parts/foot.php';
  ?>

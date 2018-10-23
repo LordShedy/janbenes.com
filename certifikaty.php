@@ -9,26 +9,17 @@ include './parts/nav.php';
       <div class="certifikaty">
         <div class="certifikat">
           <h2>Jika</h2>
-          <picture>
-            <source srcset="./img/jika.png">
-            <img src="./img/jika.png" alt="jika logo">
-          </picture>
+          <img src="./img/jika.png" alt="jika logo">
           <p>Lorem Ipsum</p>
         </div>
         <div class="certifikat">
           <h2>ABB</h2>
-          <picture>
-            <source srcset="./img/abb.png">
-            <img src="./img/abb.png" alt="abb logo">
-          </picture>
+          <img src="./img/abb.png" alt="abb logo">
           <p>Lorem Ipsum</p>
         </div>
         <div class="certifikat">
           <h2>SanSwiss</h2>
-          <picture>
-            <source srcset="./img/sanswiss.jpg">
-            <img src="./img/sanswiss.jpg" alt="sanswiss logo">
-          </picture>
+          <img src="./img/sanswiss.jpg" alt="sanswiss logo">
           <p>Lorem Ipsum</p>
         </div>
       </div>

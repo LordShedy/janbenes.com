@@ -53,7 +53,7 @@ header{
 /* CONTENT container */
 main {
   grid-area: cont;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* FOOTER container */
@@ -76,7 +76,7 @@ footer {
 }
 
 /* border */
-.skillbox, .certifikat, .contactbox,
+.skillbox, .certifikat, .contactbox, #m,
 nav, nav > li, header, main, footer {
   border-style: solid;
   border-width: 0.5px;
@@ -112,6 +112,9 @@ nav > li:hover {
 
 /* other css settings */
 
+#m {
+  height: 350px;
+}
 /* NAVBAR items */
 nav > li {
   border-radius: 2.5px;
@@ -148,10 +151,11 @@ h1 {
   padding: 0;
 }
 
-.certifikat > img {
-  width: 350px;
+.certifikat > picture > img {
+  width: 200px;
   height: 200px;
 }
+
 
 /* FOOTER container */
 footer{
@@ -244,5 +248,5 @@ footer > p {
 }
 
 /* DEVELOPEMENT CSS */
-.certifikat,.contactbox,.carousell,.mapa{border-style: dotted;}
+,.carousell,{border-style: dotted;}
 .certifikaty,.contactboxy,.carousell,.mapa{min-height: 400px;}
