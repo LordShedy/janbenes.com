@@ -3,7 +3,7 @@ include './parts/head.php';
 include './parts/nav.php';
  ?>
       <header>
-        <h1>Kontakty</h1>
+        <h1>Jak mě můžete kontaktovat</h1>
       </header>
       <main>
       <div class="contactboxy">

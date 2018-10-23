@@ -1,88 +1,53 @@
-/* main grid is mobile because mobileFirst */
-.grid{
-  display: grid;
-  grid-gap: 10px;
-  grid-template-rows:1fr 0.25fr auto 0.125fr;
-  grid-template-areas:
-  "nav" /* NAVBAR */
-  "head" /* HEADER */
-  "cont" /* CONTENT */
-  "foot"/* FOOTER */;
-}
-.skillboxy,.certifikaty,.contactboxy,.carousell,.mapa{
-  display: flex;
-  flex-direction: column;
-}
+/* font and text css */
 
-
-/* color scheme */
-#nope{
-  color: #373f51; /* dark */
-  color: #477998; /* blue */
-  color: #dfd5a5; /* light */
-  color: #b3c5d7; /* gray */
-  color: #008dd5; /* blue */
-}
-
-/* background color */
+/* body font */
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #477998;
-}
-/* primary layout elements color */
-nav,header,main,footer{
-  background-color: #b3c5d7;
 }
 
-/* background of inactive navbar items */
-nav>li{
-  background-color:#008dd5;
-  color: white;
-  padding: 0;
-}
-
-/* elements on hover */
-nav > li:hover {
-  background-color: #373f51;
-  color: white;
-}
-
-/* background */
-body {
-  background-image: url("./../img/bg.gif");
-  background-repeat: repeat;
-}
-
-/* NAVBAR container */
-nav{
-  grid-area: nav;
-  text-align: center;
-}
-
-/* NAVBAR items */
-nav > li {
-  list-style-type: none;
-  border-radius: 2.5px;
-  margin: 0;
-  padding: 5px;
-}
-
+/* NAVBAR items font css */
 nav > li > a, nav > li > a:visited{
   text-decoration: none;
   font-size: 2em;
   color: inherit;
   display: block;
 }
+
+nav > li {
+  list-style-type: none;
+}
+
+header > h1 {
+  font-size: 2em;
+}
+
+.certifikat > h2 {
+    font-size: 30px;
+}
+
+footer {
+  font-size: 12px;
+}
+/*********************/
+
+/* common CSS layout (flexbox, grid) */
+.skillboxy, .certifikaty, .contactboxy, .certifikat, .skillbox, header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* NAVBAR container */
+nav {
+  grid-area: nav;
+  text-align: center;
+}
+
 /* HEADER container */
 header{
   grid-area: head;
-}
-
-/* HEADER item */
-h1 {
-  padding: 0;
-  margin: 0;
-  font-size: 2em;
+  text-align: center;
 }
 
 /* CONTENT container */
@@ -91,42 +56,97 @@ main {
   padding: 20px;
 }
 
+/* FOOTER container */
+footer {
+  grid-area: foot;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/*************************************/
+/* CSS designing */
+/* color scheme */
+#nope {
+  color: #373f51; /* dark */
+  color: #477998; /* blue */
+  color: #dfd5a5; /* light */
+  color: #b3c5d7; /* gray */
+  color: #008dd5; /* blue */
+}
+
+/* border */
+.skillbox, .certifikat, .contactbox,
+nav, nav > li, header, main, footer {
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #373f51;
+}
+/* background color + image */
+body {
+  background-color: #477998;
+  background-image: url("./../img/bg.gif");
+  background-repeat: repeat;
+}
+
+/* NAVBAR, HEADER, MAIN, FOOTER background color */
+nav, header, main, footer{
+  background-color: #b3c5d7;
+}
+
+/* NAVBAR items inactive color */
+nav > li {
+  background-color: #008dd5;
+  color: white;
+}
+
+/* NAVBAR items :onhover color */
+nav > li:hover {
+  background-color: #373f51;
+}
+
+.skillbox, .certifikat {
+  background-color: #e5e6e4;
+}
+/*****************/
+
+/* other css settings */
+
+/* NAVBAR items */
+nav > li {
+  border-radius: 2.5px;
+  margin: 1px;
+  padding: 5px;
+}
+
+/* HEADER item */
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+/* skilbox header */
 .skillbox > h3{
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .skillbox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   margin-bottom: 10px;
   padding: 10px;
-  background-color: #e5e6e4;
   border-radius: 4.5px;
   height: 200px;
 }
 
 .certifikat {
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    background: #e5e6e4;
+  margin: 15px;
+  width: 300px;
+  height: 300px;
 }
-
 
 .certifikat > h2 {
-  font-size: 30px;
-  text-align: center;
   padding: 0;
 }
-
 
 .certifikat > img {
   width: 350px;
@@ -135,29 +155,45 @@ main {
 
 /* FOOTER container */
 footer{
-  grid-area: foot;
   margin: 0;
   padding: 0;
-  font-size: 12px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
-
+/* FOOTER items */
 footer > p {
   margin: inherit;
 }
+/**********************/
 
-
-/* centering HEADER and FOOTER items */
-header,footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* if screen is smaller than 800 px (MOBILE MODE)*/
+@media (max-width: 799px) {
+  .grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 0.25fr auto 0.125fr;
+    grid-template-areas:
+    "nav" /* NAVBAR */
+    "head" /* HEADER */
+    "cont" /* CONTENT */
+    "foot"/* FOOTER */;
+  }
 }
 
-/* if screen exceeds 800 px apply desktop css*/
+/* if screen exceeds 549 px and not exceeds 799 px (TABLET MODE)*/
+@media (max-width: 799px) and (min-width: 549px) {
+  .skillboxy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .skillbox {
+    height: 225px;
+    width: 24vw;
+    padding: 10px;
+  }
+}
+
+/* if screen exceeds 800 px (DESKTOP MODE) */
 @media (min-width: 800px) {
   .grid{
     display: grid;
@@ -190,6 +226,7 @@ header,footer{
     height: auto;
     margin: 5px;
   }
+
   .skillbox{
     height: 225px;
     width: 20vw;
@@ -206,21 +243,6 @@ header,footer{
   }
 }
 
-
-@media (max-width: 799px) and (min-width: 549px) {
-  .skillboxy {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .skillbox{
-    height: 225px;
-    width: 24vw;
-    padding: 10px;
-  }
-
-}
-/* dev CSS */
+/* DEVELOPEMENT CSS */
 .certifikat,.contactbox,.carousell,.mapa{border-style: dotted;}
 .certifikaty,.contactboxy,.carousell,.mapa{min-height: 400px;}

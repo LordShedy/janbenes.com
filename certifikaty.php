@@ -3,7 +3,7 @@ include './parts/head.php';
 include './parts/nav.php';
  ?>
       <header>
-        <h1>Certifikáty</h1>
+        <h1>Mám několik certifikátů</h1>
       </header>
       <main>
       <div class="certifikaty">
