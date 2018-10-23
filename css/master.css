@@ -31,7 +31,8 @@ footer {
 /*********************/
 
 /* common CSS layout (flexbox, grid) */
-.skillboxy, .certifikaty, .contactboxy, .certifikat, .skillbox, header{
+.skillboxy, .certifikaty, .carousell,
+.contactboxy, .certifikat, .skillbox, header{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,6 +49,20 @@ nav {
 header{
   grid-area: head;
   text-align: center;
+}
+
+.carousell {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
+
+.imagebox {
+  width: 20vw;
+  margin: 10px;
 }
 
 /* CONTENT container */
@@ -76,7 +91,7 @@ footer {
 }
 
 /* border */
-.skillbox, .certifikat, .contactbox, #m,
+.skillbox, .certifikat, .contactbox, #m, .imagebox,
 nav, nav > li, header, main, footer {
   border-style: solid;
   border-width: 0.5px;
@@ -151,10 +166,24 @@ h1 {
 }
 
 .certifikat > picture > img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: inherit;
 }
 
+.contactbox-img {
+  width: 20vw;
+  border-style: solid;
+}
+
+.contactbox-text {
+  width: 40vw;
+  border-style: solid;
+}
+
+.imagebox {
+  width: 200px;
+  height: 300px;
+}
 
 /* FOOTER container */
 footer{
@@ -180,6 +209,9 @@ footer > p {
     "foot"/* FOOTER */;
   }
   .certifikat {
+    width: 80vw;
+  }
+  .skilbox {
     width: 80vw;
   }
 }
@@ -225,6 +257,7 @@ footer > p {
   .contactboxy,.skillboxy,.certifikaty,nav{
     flex-direction: row;
     justify-content: space-around;
+    align-items:center;
   }
 
   .skillboxy {
@@ -235,6 +268,7 @@ footer > p {
 
   .certifikat {
     width: 25vw;
+    height: 40vh;
   }
 
   .skillbox{
@@ -243,16 +277,16 @@ footer > p {
     padding: 10px;
   }
 
-  nav > li,.certifikat,.skillbox{
+  nav > li,.certifikat,.skillbox,.imagebox{
     transition: all .2s ease-in-out;
   }
 
   /* NAVBAR items:hover */
-  nav > li:hover, .certifikat:hover, .skillbox:hover {
+  nav > li:hover, .certifikat:hover, .skillbox:hover, .imagebox:hover {
     transform: scale(1.1);
   }
 }
 
 /* DEVELOPEMENT CSS */
-,.carousell,{border-style: dotted;}
-.certifikaty,.contactboxy,.carousell,.mapa{min-height: 400px;}
+,.gallery,{border-style: dotted;}
+.certifikaty,.contactboxy,.gallery,.mapa{min-height: 400px;}
