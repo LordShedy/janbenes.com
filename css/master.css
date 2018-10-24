@@ -91,7 +91,8 @@ footer {
 }
 
 /* border */
-.skillbox, .certifikat, .contactbox, #m, .imagebox,
+.skillbox, .certifikat, .contactbox,
+#m, .imagebox,.contactbox-img,
 nav, nav > li, header, main, footer {
   border-style: solid;
   border-width: 0.5px;
@@ -171,8 +172,13 @@ h1 {
 }
 
 .contactbox-img {
-  width: 20vw;
-  border-style: solid;
+  width: 275px;
+  height: 350px;
+  border-radius: 4.5px;
+}
+
+.contactbox-img > img {
+  border-radius: inherit;
 }
 
 .contactbox-text {
@@ -183,6 +189,11 @@ h1 {
 .imagebox {
   width: 200px;
   height: 300px;
+  border-radius: 4.5px;
+}
+
+.imagebox > img {
+  border-radius: inherit;
 }
 
 /* FOOTER container */

@@ -8,38 +8,21 @@ include './parts/nav.php';
       <main>
       <div class="contactboxy">
         <div class="contactbox-img">
-          <picture>
-            <source media="(min-width: 800)" srcset="./img/profile.jpg">
-            <img src="./img/profile.jpg" alt="obr">
-          </picture>
+        <img src="./img/profile.jpeg" width="275px" height="350px" alt="obr">
         </div>
         <div class="contactbox-text">
-          <h2>Kontakt</h2>
-          <p>
-            <b>Jan Beneš</b>
-            <br />
-            Palackého 25
-            <br />
-            412 01 Litoměřice
-          </p>
-          <ul>
-            <li>
-              <b>mobil:</b>
+
+              <h4>mobil:</h4>
               +420 603 226 369
-            </li>
-            <li>
-              <b>IČ:</b>
+
+              <h4>IČ:</h4>
               13348213
-            </li>
-            <li>
-              <b>DIČ:</b>
+
+              <h4>DIČ:</h4>
               CZ5711020062
-            </li>
-            <li>
-              <b>email:</b>
+
+              <h4>email:</h4>
               <a href='mailto:elmont@email.cz'>elmont@email.cz</a>
-            </li>
-          </ul>
         </div>
 <?php
 include './parts/foot.php';

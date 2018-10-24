@@ -10,17 +10,17 @@ include './parts/nav.php';
         <div class="certifikat">
           <h2>Jika</h2>
           <img src="./img/jika.png" alt="jika logo">
-          <p>Lorem Ipsum</p>
+          <p>certifikovaný montér výrobků Jika</p>
         </div>
         <div class="certifikat">
           <h2>ABB</h2>
           <img src="./img/abb.png" alt="abb logo">
-          <p>Lorem Ipsum</p>
+          <p>proškolení s montáži výrobků ABB</p>
         </div>
         <div class="certifikat">
           <h2>SanSwiss</h2>
           <img src="./img/sanswiss.jpg" alt="sanswiss logo">
-          <p>Lorem Ipsum</p>
+          <p>certifikovaný montér výrobků SanSwiss</p>
         </div>
       </div>
 <?php
