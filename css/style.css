@@ -1,0 +1,318 @@
+/* BODY */
+  body{
+      font-family: 'Source Sans Pro', sans-serif;
+      background-color: #477998;
+      background-image: url("./../img/bg.gif");
+      background-repeat: repeat;
+  }
+  /* MOBILE 1st! */
+  .grid {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-rows: 1fr 0.25fr auto 0.125fr;
+      grid-template-areas:
+      "nav" /* NAVBAR */
+      "head" /* HEADER */
+      "cont" /* CONTENT */
+      "foot"/* FOOTER */;
+  }
+  /* color scheme */
+  #colorscheme {
+      color: #373f51; /* dark */
+      color: #477998; /* blue */
+      color: #dfd5a5; /* light */
+      color: #b3c5d7; /* gray */
+      color: #008dd5; /* blue */
+  }
+  /* NAVBAR */
+    nav{
+        grid-area: nav;
+        text-align: center;
+        background-color: #b3c5d7;
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: #373f51;
+    }
+    /* NAVBAR ITEMS */
+    nav > li{
+        list-style-type: none;
+        background-color: #008dd5;
+        color: white;
+        border-radius: 2.5px;
+        margin: 1px;
+        padding: 5px;
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: #373f51;
+    }
+    nav > li > a, nav > li > a:visited{
+        text-decoration: none;
+        font-size: 2em;
+        color: inherit;
+        display: block;
+    }
+    nav > li:hover {
+        background-color: #373f51;
+    }
+  /* HEADER */
+    header{
+        grid-area: head;
+        text-align: center;
+        background-color: #b3c5d7;
+        border-style: solid;
+        border-width: 0.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* HEADER CONTENT */
+      header > h1{
+          font-size: 2em;
+      }
+      h1 {
+          padding: 0;
+          margin: 0;
+      }
+  /* CONTENT */
+    main {
+        grid-area: cont;
+        padding: 10px;
+        background-color: #b3c5d7;
+        border-style: solid;
+        border-width: 0.5px;
+    }
+    /* 1st page – skillboxy */
+      .skillboxy{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+      /* skillbox header */
+      .skillbox > h3{
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+      /* skillbox */
+      .skillbox {
+          background-color: #e5e6e4;
+          border-style: solid;
+          border-width: 0.5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          margin-bottom: 10px;
+          padding: 10px;
+          border-radius: 4.5px;
+          height: 200px;
+          width: 80vw;
+      }
+    /* 2nd page – mapyapi */
+      #m{
+          height: 70vh;
+          border-style: solid;
+          border-width: 0.5px;
+          border-color: #373f51;
+
+      }
+    /* 3rd page – carousell */
+      .carousell {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          height: 100%;
+          align-items: center;
+      }
+      .imagebox {
+          width: 250px;
+          height: 300px;
+          border-radius: 4.5px;
+          overflow:hidden;
+          margin: 10px;
+          border-style: solid;
+          border-width: 0.5px;
+          border-color: #373f51;
+      }
+      .imagebox > img {
+          width: inherit;
+          height: inherit;
+          border-radius: inherit;
+      }
+    /* 4th page – certifikaty */
+      .certifikaty{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+      .certifikat{
+          background-color: #e5e6e4;
+          border-style: solid;
+          border-width: 0.5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          width: 80vw;
+          overflow: hidden;
+        }
+      .certifikat > h2{
+          padding: 0;
+          font-size: 40px;
+          margin-bottom: 10px;
+      }
+      .certifikat > picture > img {
+          width: 100%;
+          height: inherit;
+      }
+      .certifikat > p {
+          margin: 5px;
+      }
+    /* 5th page – contactboxy */
+      .contactboxy{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+      .contactbox{
+          border-style: solid;
+          border-width: 0.5px;
+          border-color: #373f51;
+      }
+      .contactbox-img {
+          width: 275px;
+          height: 350px;
+          border-radius: 4.5px;
+          border-style: solid;
+          border-width: 0.5px;
+          border-color: #373f51;
+
+      }
+      .contactbox-img > img {
+          border-radius: inherit;
+      }
+
+      .contactbox-text > p {
+          font-size: 30px;
+      }
+  /* FOOTER */
+    footer{
+        font-size: 12px;
+        grid-area: foot;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        background-color: #b3c5d7;
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: #373f51;
+    }
+    /* FOOTER items */
+      footer > p {
+          margin: inherit;
+      }
+
+
+/* if screen exceeds 549 px and not exceeds 799 px (TABLET MODE)*/
+@media (max-width: 799px) and (min-width: 549px) {
+  /* CONTENT */
+    /* 1st page – skillboxy */
+      .skillboxy {
+          flex-direction: row;
+          justify-content: space-around;
+      }
+      /* skillbox */
+      .skillbox {
+          height: 225px;
+          width: 24vw;
+      }
+    /* 2nd page – mapyapi */
+    /* 3rd page – carousell */
+    /* 4th page – certifikaty */
+      .certifikat {
+          width: 44vw;
+      }
+    /* 5th page – contactboxy */
+}
+
+/* if screen exceeds 800 px (DESKTOP MODE) */
+@media (min-width: 800px) {
+  /* BODY */
+    .grid{
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: 1fr 12fr 1fr;
+        grid-template-rows: 4fr 0.5fr 3fr 0.5fr minmax(400px,auto) 0.5fr 1fr;
+        grid-template-areas:
+        "nav nav  nav"
+        "... ...  ..."
+        "... head ..."
+        "... ...  ..."
+        "... cont ..."
+        "... ...  ... "
+        "... foot ...";
+    }
+  /* NAV */
+    nav{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav > li{
+        transition: all .2s ease-in-out;
+    }
+    nav > li:hover{
+        transform: scale(1.1);
+    }
+  /* CONTENT */
+    /* 1st page – skillboxy */
+      .skillboxy{
+          flex-direction: row;
+          justify-content: space-around;
+          min-height: 225px;
+          height: auto;
+          margin: 5px;
+      }
+      /* skillbox */
+      .skillbox{
+          height: 225px;
+          width: 20vw;
+          padding: 10px;
+          transition: all .2s ease-in-out;
+      }
+      .skillbox:hover{
+          transform: scale(1.1);
+      }
+    /* 2nd page – mapyapi */
+    /* 3rd page – carousell */
+      .imagebox{
+          transition: all .2s ease-in-out;
+      }
+      .imagebox:hover{
+          transform: scale(1.1);
+      }
+    /* 4th page – certifikaty */
+      .certifikaty{
+          flex-direction: row;
+          justify-content: space-around;
+          align-items:center;
+      }
+      .certifikat{
+          width: 15vw;
+          height: 30vh;
+          transition: all .2s ease-in-out;
+      }
+      .certifikat:hover{
+          transform: scale(1.1);
+      }
+    /* 5th page – contactboxy */
+      .contactboxy{
+          flex-direction: row;
+          justify-content: space-around;
+          align-items:center;
+      }
+  /* FOOTER */
+}
