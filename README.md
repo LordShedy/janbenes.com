@@ -1,10 +1,10 @@
-### Technologies used
+### Build with :wrench:
 - HTML,
 - CSS,
 - PHP,
 - JS.
 
-
+### Site structure :evergreen_tree:
 ```bash
 janbenes.com
 ├── css/
