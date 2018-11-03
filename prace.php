@@ -8,19 +8,19 @@ include './parts/nav.php';
       <main>
       <div class="carousell">
         <div class="imagebox">
-          <img src="./img/examples/svetla.jpg"  width="200px" height="300px" alt="">
+          <img src="./img/examples/svetla.jpg"  alt="fotka svetla">
           <p></p>
         </div>
         <div class="imagebox">
-          <img src="./img/examples/umyvadlo.jpg" width="200px" height="300px"  alt="">
+          <img src="./img/examples/umyvadlo.jpg"  alt="fotka umyvadla">
           <p></p>
         </div>
         <div class="imagebox">
-          <img src="./img/examples/pisoar.jpg" width="200px" height="300px"  alt="">
+          <img src="./img/examples/rozvadec.jpg"  alt="fotka rozvadece">
           <p></p>
         </div>
         <div class="imagebox">
-          <img src="./img/examples/toaleta.jpg" width="200px" height="300px"  alt="">
+          <img src="./img/examples/toaleta.jpg"  alt="fotka toalety">
           <p></p>
         </div>
       </div>

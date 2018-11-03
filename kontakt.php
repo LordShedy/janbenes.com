@@ -8,7 +8,7 @@ include './parts/nav.php';
       <main>
       <div class="contactboxy">
         <div class="contactbox-img">
-        <img src="./img/profile.jpg" width="275px" height="350px" alt="obr">
+        <img src="./img/profile.jpg" alt="obr">
         </div>
         <div class="contactbox-text">
           <h2>Kontaktovat mě můžete na:</h2>

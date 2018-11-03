@@ -14,14 +14,12 @@
       "cont" /* CONTENT */
       "foot"/* FOOTER */;
   }
-  /* color scheme */
-  #colorscheme {
-      color: #373f51; /* dark */
-      color: #477998; /* blue */
-      color: #dfd5a5; /* light */
-      color: #b3c5d7; /* gray */
-      color: #008dd5; /* blue */
-  }
+  /* color scheme
+      /* dark #373f51 */
+      /* blue #477998 */
+      /* light #dfd5a5 */
+      /* gray #b3c5d7*/
+      /* blue #008dd5 */
   /* NAVBAR */
     nav{
         grid-area: nav;
@@ -38,12 +36,12 @@
         margin: 10px;
         padding: 0;
     }
-    .navbar{
+      ul{
         display: flex;
         flex-direction: column;
     }
     /* NAVBAR ITEMS */
-    .navbar > li{
+      ul > li {
         list-style-type: none;
         background-color: #008dd5;
         color: white;
@@ -54,13 +52,13 @@
         border-width: 0.5px;
         border-color: #373f51;
     }
-    .navbar > li > a, .navbar > li > a:visited{
+    ul > li > a,    ul > li > a:visited{
         text-decoration: none;
         font-size: 27.5px;
         color: inherit;
         display: block;
     }
-    .navbar > li:hover {
+      ul > li:hover {
         background-color: #373f51;
     }
   /* HEADER */
@@ -100,7 +98,10 @@
       /* skillbox header */
       .skillbox > h3{
           margin-top: 10px;
-          margin-bottom: 10px;
+          margin-bottom: 5px;
+      }
+      .skillbox > picture{
+        padding-top: 10px;
       }
       /* skillbox */
       .skillbox {
@@ -291,15 +292,15 @@
         flex-direction: row;
         justify-content: space-around;
     }
-    .navbar{
+      ul{
       flex-direction: row;
       justify-content: space-around;
       width: 800px;
     }
-    .navbar > li{
+      ul > li{
         transition: all .2s ease-in-out;
     }
-    .navbar > li:hover{
+      ul > li:hover{
         transform: scale(1.1);
     }
   /* CONTENT */

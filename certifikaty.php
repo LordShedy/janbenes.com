@@ -15,7 +15,7 @@ include './parts/nav.php';
         <div class="certifikat">
           <img src="./img/logos/ABB.svg" alt="logo firmy ABB">
           <p class="cert-txt">proškolení s montáži výrobků ABB</p>
-          <p class="cert-href"><a href="http://www117.abb.com/addresselm.asp?thema=5810">Můžete mě nalézt také zde</a></p>
+          <p class="cert-href"><a href="http://www117.abb.com/addresselm.asp?thema=5810">Můžete mě nalézt také zde</a><1/p>
         </div>
         <div class="certifikat">
           <img src="./img/logos/sanswiss.svg" alt="logo firmy SanSwiss">
