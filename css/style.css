@@ -28,7 +28,7 @@
         text-align: center;
         background-color: #b3c5d7;
         border-style: solid;
-        border-width: 0.5px;
+        border-width: 1px;
         border-color: #373f51;
     }
     .brand{
@@ -49,7 +49,7 @@
         margin: 1px;
         padding: 5px;
         border-style: solid;
-        border-width: 0.5px;
+        border-width: 1px;
         border-color: #373f51;
     }
     ul > li > a,    ul > li > a:visited{
@@ -67,7 +67,7 @@
         text-align: center;
         background-color: #b3c5d7;
         border-style: solid;
-        border-width: 0.5px;
+        border-width: 1px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -86,7 +86,7 @@
         padding: 10px;
         background-color: #b3c5d7;
         border-style: solid;
-        border-width: 0.5px;
+        border-width: 1px;
     }
     /* 1st page – skillboxy */
       .skillboxy{
@@ -107,7 +107,7 @@
       .skillbox {
           background-color: #e5e6e4;
           border-style: solid;
-          border-width: 0.5px;
+          border-width: 1px;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -122,7 +122,7 @@
       #m{
           height: 70vh;
           border-style: solid;
-          border-width: 0.5px;
+          border-width: 1px;
           border-color: #373f51;
 
       }
@@ -141,7 +141,7 @@
           overflow:hidden;
           margin: 10px;
           border-style: solid;
-          border-width: 0.5px;
+          border-width: 1px;
           border-color: #373f51;
       }
       .imagebox > img {
@@ -159,19 +159,19 @@
       }
       .certifikat{
           background-color: #e5e6e4;
-          border-style: solid;
-          border-width: 0.5px;
+          border: 1px solid black;
           display: flex;
           flex-direction: column;
           justify-content: center;
           text-align: center;
-          width: 82vw;
           overflow: hidden;
+          width: 82vw;
           margin: 20px;
         }
-      .certifikat > picture > img {
+      .certifikat > img {
           width: 100%;
           height: inherit;
+          padding: 0;
       }
       .cert-txt {
           font-size: 20px;
@@ -205,7 +205,7 @@
           height: 350px;
           border-radius: 4.5px;
           border-style: solid;
-          border-width: 0.5px;
+          border-width: 1px;
           border-color: #373f51;
       }
       .contactbox-img > img {
@@ -225,7 +225,7 @@
         padding: 0;
         background-color: #b3c5d7;
         border-style: solid;
-        border-width: 0.5px;
+        border-width: 1px;
         border-color: #373f51;
     }
     /* FOOTER items */
@@ -356,4 +356,30 @@
           align-items: center;
       }
   /* FOOTER */
+}
+@media print{
+  @page{
+    margin: 1.5cm;
+  }
+  nav, .contactbox-img > img, .skillbox > picture, .cert-href, .certifikat > img {
+    display: none;
+  }
+
+  .skillbox,.skillbox > h3, .cert-txt {
+    margin: 0;
+    padding: 0;
+  }
+  nav,.skillbox,header, .contactbox-img,.imagebox, .certifikat, .certifikat > img {
+    border: 0;
+    border-style: none;
+    border-radius: 0px;
+  }
+  .skillbox{
+      width: auto;
+      height: auto;
+      justify-content: flex-start;
+  }
+  main, footer, .grid{
+    border-style: none;
+  }
 }
