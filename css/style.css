@@ -2,8 +2,6 @@
   body{
       font-family: 'Source Sans Pro', sans-serif;
       background-color: #477998;
-      background-image: url("./../img/bg.gif");
-      background-repeat: repeat;
   }
   /* MOBILE 1st! */
   .grid {
@@ -27,14 +25,24 @@
   /* NAVBAR */
     nav{
         grid-area: nav;
+        display: flex;
+        flex-direction: column;
         text-align: center;
         background-color: #b3c5d7;
         border-style: solid;
         border-width: 0.5px;
         border-color: #373f51;
     }
+    .brand{
+        font-size: 32.5px;
+        margin: 10px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
     /* NAVBAR ITEMS */
-    nav > li{
+    .navbar > li{
         list-style-type: none;
         background-color: #008dd5;
         color: white;
@@ -45,13 +53,13 @@
         border-width: 0.5px;
         border-color: #373f51;
     }
-    nav > li > a, nav > li > a:visited{
+    .navbar > li > a, .navbar > li > a:visited{
         text-decoration: none;
-        font-size: 2em;
+        font-size: 27.5px;
         color: inherit;
         display: block;
     }
-    nav > li:hover {
+    .navbar > li:hover {
         background-color: #373f51;
     }
   /* HEADER */
@@ -67,7 +75,7 @@
     }
     /* HEADER CONTENT */
       header > h1{
-          font-size: 2em;
+          font-size: 22.5px;
       }
       h1 {
           padding: 0;
@@ -216,7 +224,7 @@
 
 
 /* if screen exceeds 549 px and not exceeds 799 px (TABLET MODE)*/
-@media (max-width: 799px) and (min-width: 549px) {
+@media (max-width: 1019px) and (min-width: 549px) {
   /* CONTENT */
     /* 1st page – skillboxy */
       .skillboxy {
@@ -238,7 +246,7 @@
 }
 
 /* if screen exceeds 800 px (DESKTOP MODE) */
-@media (min-width: 800px) {
+@media (min-width: 1019px) {
   /* BODY */
     .grid{
         display: grid;
@@ -261,10 +269,15 @@
         flex-direction: row;
         justify-content: space-around;
     }
-    nav > li{
+    .navbar{
+      flex-direction: row;
+      justify-content: space-around;
+      width: 800px;
+    }
+    .navbar > li{
         transition: all .2s ease-in-out;
     }
-    nav > li:hover{
+    .navbar > li:hover{
         transform: scale(1.1);
     }
   /* CONTENT */
