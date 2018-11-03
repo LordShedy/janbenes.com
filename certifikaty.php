@@ -8,19 +8,19 @@ include './parts/nav.php';
       <main>
       <div class="certifikaty">
         <div class="certifikat">
-          <h2>Jika</h2>
-          <img src="./img/jika.png" alt="jika logo">
-          <p>certifikovaný montér výrobků Jika</p>
+          <img src="./img/logos/jika.svg" alt="logo firmy Jika">
+          <p class="cert-txt">certifikovaný montér výrobků Jika</p>
+          <p class="cert-href"><a href="http://www.jika.cz/servis/seznam-servisu/prodejni-mista/sa_instalateri/instalateri">lze mě také nalézt zde</a></p>
         </div>
         <div class="certifikat">
-          <h2>ABB</h2>
-          <img src="./img/abb.png" alt="abb logo">
-          <p>proškolení s montáži výrobků ABB</p>
+          <img src="./img/logos/ABB.svg" alt="logo firmy ABB">
+          <p class="cert-txt">proškolení s montáži výrobků ABB</p>
+          <p class="cert-href"><a href="http://www117.abb.com/addresselm.asp?thema=5810">Můžete mě nalézt také zde</a></p>
         </div>
         <div class="certifikat">
-          <h2>SanSwiss</h2>
-          <img src="./img/sanswiss.jpg" alt="sanswiss logo">
-          <p>certifikovaný montér výrobků SanSwiss</p>
+          <img src="./img/logos/sanswiss.svg" alt="logo firmy SanSwiss">
+          <p class="cert-txt">certifikovaný montér výrobků SanSwiss</p>
+          <p class="cert-href"><a href="http://www.sanswiss.cz/#kontakt/montazni-firmy/ustecky-kraj">Můžete mě nalézt také zde</a></p>
         </div>
       </div>
 <?php

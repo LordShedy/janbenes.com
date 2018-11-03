@@ -95,6 +95,7 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
+          align-items: center;
       }
       /* skillbox header */
       .skillbox > h3{
@@ -152,6 +153,8 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
       }
       .certifikat{
           background-color: #e5e6e4;
@@ -163,18 +166,21 @@
           text-align: center;
           width: 80vw;
           overflow: hidden;
+          margin: 20px;
         }
-      .certifikat > h2{
-          padding: 0;
-          font-size: 40px;
-          margin-bottom: 10px;
-      }
       .certifikat > picture > img {
           width: 100%;
           height: inherit;
       }
-      .certifikat > p {
-          margin: 5px;
+      .cert-txt {
+          font-size: 20px;
+          margin: 10px 10px 0 10px;
+          padding: 0;
+      }
+      .cert-href {
+          font-size: 16px;
+          margin: 0 10px 20px 10px;
+          padding-bottom: 7.5px;
       }
     /* 5th page – contactboxy */
       .contactboxy{
@@ -183,11 +189,14 @@
           justify-content: center;
           align-items: center;
       }
-      .contactbox{
+      .contactbox-text{
           order: 0;
-          border-style: solid;
-          border-width: 0.5px;
-          border-color: #373f51;
+      }
+      .contactbox-text > p{
+        font-size: 20px;
+      }
+      .contactbox-text > h4{
+        font-size: 40px;
       }
       .contactbox-img {
           order: 1;
@@ -202,10 +211,6 @@
           border-radius: inherit;
           width: inherit;
           height: inherit;
-      }
-
-      .contactbox-text > p {
-          font-size: 30px;
       }
   /* FOOTER */
     footer{
@@ -245,7 +250,7 @@
     /* 3rd page – carousell */
     /* 4th page – certifikaty */
       .certifikat {
-          width: 44vw;
+          width: 55vh;
       }
     /* 5th page – contactboxy */
       .contactboxy{
@@ -258,7 +263,7 @@
       }
       .contactbox-img {
           order: 0;
-          margin-right: 20px;
+          margin-right: 40px;
       }
 }
 
@@ -331,12 +336,8 @@
           align-items:center;
       }
       .certifikat{
-          width: 15vw;
-          height: 30vh;
-          transition: all .2s ease-in-out;
-      }
-      .certifikat:hover{
-          transform: scale(1.1);
+          width: 20vw;
+          height: 35vh;
       }
     /* 5th page – contactboxy */
       .contactboxy{
@@ -344,13 +345,13 @@
           justify-content: center;
           align-items: center;
       }
+
       .contactbox{
           order: 1;
-
       }
       .contactbox-img {
           order: 0;
-          margin-right: 20px;
+          margin-right: 40px;
           align-items: center;
       }
   /* FOOTER */
