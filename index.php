@@ -2,7 +2,7 @@
 include './parts/head.php';
 include './parts/nav.php';
  ?><header>
-        <h1>Služby, které provádím</h1>
+        <h1>Dělám tyto služby</h1>
       </header>
       <main>
       <div class="skillboxy">

@@ -8,13 +8,17 @@ include './parts/nav.php';
       <main>
       <div class="contactboxy">
         <div class="contactbox-img">
-        <img src="./img/profile.jpeg" width="275px" height="350px" alt="obr">
+        <img src="./img/profile.jpg" width="275px" height="350px" alt="obr">
         </div>
         <div class="contactbox-text">
-              <p><b>mobil:</b> +420 603 226 369</p>
-              <p><b>IČ:</b> 13348213</p>
-              <p><b>DIČ:</b> CZ5711020062</p>
-              <p><b>email:</b> <a href='mailto:elmont@email.cz'>elmont@email.cz</a></p>
+          <h4>Telefonní číslo:</h4>
+          <p>+420 603 226 369</p>
+          <h4>Identifikační číslo (IČ):</h4>
+          <p>13348213</p>
+          <h4>Daňové identifikační číslo (DIČ):</h4>
+          <p>CZ5711020062</p>
+          <h4>E-mailová adresa:</h4>
+          <p><a href='mailto:elmont@email.cz'>elmont@email.cz</a></p>
         </div>
 <?php
 include './parts/foot.php';
