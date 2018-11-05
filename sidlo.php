@@ -3,7 +3,7 @@ include './parts/head.php';
 include './parts/nav.php';
  ?>
       <header>
-        <h1>Zde mě můžete najít</h1>
+        <h2>Zde mě můžete najít</h2>
       </header>
       <main>
         <div id="m"></div>

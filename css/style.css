@@ -1,13 +1,17 @@
+html{
+  font-size: 106.25%;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+}
 /* BODY */
   body{
-      font-family: 'Source Sans Pro', sans-serif;
       background-color: #477998;
   }
   /* MOBILE 1st! */
   .grid {
       display: grid;
-      grid-gap: 10px;
-      grid-template-rows: 1fr 0.25fr auto 0.125fr;
+      grid-gap: .5em;
+      grid-template-rows: 1fr 3.25em minmax(20em,auto) 2.125em;
       grid-template-areas:
       "nav" /* NAVBAR */
       "head" /* HEADER */
@@ -31,17 +35,23 @@
         border-width: 1px;
         border-color: #373f51;
     }
-    .brand{
-        font-size: 32.5px;
-        margin: 10px;
-        padding: 0;
+    h1{
+        font-size: 2.125rem;
+        margin: .5rem;
+        padding: 0.5rem;
+        height: 1.5em;
+        background-color: #dfd5a5;
+        border: 1px solid;
+        border-radius: 2.5px;
     }
-      ul{
+    ul{
         display: flex;
         flex-direction: column;
+        padding: 0.25rem;
+        margin: 0;
     }
     /* NAVBAR ITEMS */
-      ul > li {
+    ul > li {
         list-style-type: none;
         background-color: #008dd5;
         color: white;
@@ -52,9 +62,12 @@
         border-width: 1px;
         border-color: #373f51;
     }
+    .active{
+      background-color: #373f51;
+    }
     ul > li > a,    ul > li > a:visited{
         text-decoration: none;
-        font-size: 27.5px;
+        font-size: 1.75rem;
         color: inherit;
         display: block;
     }
@@ -73,20 +86,17 @@
         align-items: center;
     }
     /* HEADER CONTENT */
-      header > h1{
-          font-size: 27.5px;
-      }
-      h1 {
-          padding: 0;
+      header > h2{
+          font-size: 1.625rem;
+          padding: 0.25rem;
           margin: 0;
       }
   /* CONTENT */
     main {
         grid-area: cont;
-        padding: 10px;
+        padding: 0.5rem;
         background-color: #b3c5d7;
-        border-style: solid;
-        border-width: 1px;
+        border: 1px solid;
     }
     /* 1st page – skillboxy */
       .skillboxy{
@@ -95,28 +105,40 @@
           justify-content: center;
           align-items: center;
       }
-      /* skillbox header */
-      .skillbox > h3{
-          margin-top: 10px;
-          margin-bottom: 5px;
-      }
-      .skillbox > picture{
-        padding-top: 10px;
-      }
       /* skillbox */
       .skillbox {
           background-color: #e5e6e4;
-          border-style: solid;
-          border-width: 1px;
+          border: 1px solid;
           display: flex;
           flex-direction: column;
           justify-content: center;
           text-align: center;
-          margin-bottom: 10px;
-          padding: 10px;
           border-radius: 4.5px;
-          height: 200px;
-          width: 80vw;
+          overflow: hidden;
+          width: 90%;
+          padding: 0.5rem;
+          margin: 0.25rem;
+      }
+      /* skillbox header */
+      .skillbox > h3{
+        display: block;
+        font-size: 1.375rem;
+        padding: 0;
+        margin: 0.25em auto 0.5em auto;
+      }
+      .skillbox > p{
+        display: block;
+        font-size: 1.125rem;
+        padding: 0;
+        margin: 0.25em auto 0.5em auto;
+      }
+      .skillbox > img{
+        display: block;
+        height: 7em;
+        width: 7em;
+        margin: 0.5em auto 0.5em auto;
+        padding: 0;
+        /* top | right | bottom | left */
       }
     /* 2nd page – mapyapi */
       #m{
@@ -124,7 +146,6 @@
           border-style: solid;
           border-width: 1px;
           border-color: #373f51;
-
       }
     /* 3rd page – carousell */
       .carousell {
@@ -135,8 +156,8 @@
           align-items: center;
       }
       .imagebox {
-          width: 250px;
-          height: 300px;
+          height: 20em;
+          width: auto;
           border-radius: 4.5px;
           overflow:hidden;
           margin: 10px;
@@ -156,32 +177,38 @@
           justify-content: center;
           align-items: center;
           flex-wrap: wrap;
+          padding: 0;
+          margin: 0;
+          text-align: center;
       }
       .certifikat{
           background-color: #e5e6e4;
           border: 1px solid black;
           display: flex;
           flex-direction: column;
-          justify-content: center;
           text-align: center;
+          width: 80vw;
+          max-width: 17em;
+          height: auto;
           overflow: hidden;
-          width: 82vw;
-          margin: 20px;
+          margin: 0.25em auto 0.25em auto;
+          border-radius: 4.5px;
         }
-      .certifikat > img {
+      .logo {
           width: 100%;
-          height: inherit;
           padding: 0;
+          margin: 0 auto 0 auto;
+          background-color: white;
       }
       .cert-txt {
-          font-size: 20px;
-          margin: 10px 10px 0 10px;
+          font-size: 1rem;
+          margin: 1em auto 0 auto;
           padding: 0;
       }
       .cert-href {
-          font-size: 16px;
-          margin: 0 10px 20px 10px;
-          padding-bottom: 10px;
+          font-size: 0.9rem;
+          margin: 0 auto 1em auto;
+          padding: 0;
       }
     /* 5th page – contactboxy */
       .contactboxy{
@@ -191,22 +218,30 @@
           align-items: center;
       }
       .contactbox-text{
-          order: 0;
-      }
-      .contactbox-text > p{
-        font-size: 20px;
-      }
-      .contactbox-text > h4{
-        font-size: 40px;
+        background-color: #e5e6e4;
+        border: 1px solid;
+        border-radius: 4.5px;
+        margin: 1em auto 0.5em auto;
+        padding: 1em;
       }
       .contactbox-img {
-          order: 1;
-          width: 262.5px;
-          height: 350px;
-          border-radius: 4.5px;
-          border-style: solid;
-          border-width: 1px;
-          border-color: #373f51;
+        margin: 0.5em auto 1em auto;
+        padding: 0;
+        height: 350px;
+        border-radius: 4.5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #373f51;
+      }
+      .cont-h{
+        font-size: 1.375rem;
+        padding: 0;
+        margin: 0em auto 0.25em auto;
+      }
+      .cont-t{
+        font-size: 1rem;
+        padding: 0;
+        margin: 0 auto 0.25em auto;
       }
       .contactbox-img > img {
           border-radius: inherit;
@@ -215,7 +250,6 @@
       }
   /* FOOTER */
     footer{
-        font-size: 12px;
         grid-area: foot;
         display: flex;
         flex-direction: row;
@@ -227,15 +261,33 @@
         border-style: solid;
         border-width: 1px;
         border-color: #373f51;
+        text-align: center;
+        height: 100%;
     }
     /* FOOTER items */
       footer > p {
+          font-size: .9rem;
           margin: inherit;
       }
 
+@media (max-width: 25em){
+  .grid {
+      grid-template-rows: 1fr 4.25em minmax(20em,auto) 2.125em;
+  }
+}
 
-/* if screen exceeds 549 px and not exceeds 799 px (TABLET MODE)*/
-@media (max-width: 1019px) and (min-width: 549px) {
+@media (max-width: 30.375em){
+  /* NAVBAR */
+    h1{
+        height: 3em;
+    }
+  /* FOOTER items */
+    footer{
+        height: 4em;
+    }
+}
+
+@media (max-width: 82.5em) and (min-width: 45em) {
   /* CONTENT */
     /* 1st page – skillboxy */
       .skillboxy {
@@ -244,38 +296,32 @@
       }
       /* skillbox */
       .skillbox {
-          height: 225px;
-          width: 24vw;
+        width: 27.5vw;
+        height: 16.25em;
       }
     /* 2nd page – mapyapi */
     /* 3rd page – carousell */
     /* 4th page – certifikaty */
-      .certifikat {
-          width: 55vh;
+      .certifikaty{
+          flex-direction: row;
       }
     /* 5th page – contactboxy */
       .contactboxy{
           flex-direction: row;
-          justify-content: center;
-          align-items: center;
+          justify-content: space-around;
       }
-      .contactbox{
-          order: 1;
-      }
-      .contactbox-img {
-          order: 0;
-          margin-right: 40px;
+      .contactbox-text {
+        order: 1;
       }
 }
 
-/* if screen exceeds 800 px (DESKTOP MODE) */
-@media (min-width: 1019px) {
+@media (min-width: 82.5em) {
   /* BODY */
     .grid{
         display: grid;
         grid-gap: 0px;
-        grid-template-columns: 1fr 12fr 1fr;
-        grid-template-rows: 4.5fr 0.5fr 2fr 0.5fr minmax(400px,auto) 0.5fr 1fr;
+        grid-template-columns: 2fr minmax(60rem,auto) 2fr;
+        grid-template-rows: 5rem 1rem 3rem 1rem minmax(5rem,auto) 1rem 2rem;
         grid-template-areas:
         "nav nav  nav"
         "... ...  ..."
@@ -295,9 +341,10 @@
       ul{
       flex-direction: row;
       justify-content: space-around;
-      width: 800px;
+      width: 60vw;
     }
       ul > li{
+        margin: 1vw;
         transition: all .2s ease-in-out;
     }
       ul > li:hover{
@@ -308,15 +355,12 @@
       .skillboxy{
           flex-direction: row;
           justify-content: space-around;
-          min-height: 225px;
-          height: auto;
-          margin: 5px;
       }
       /* skillbox */
       .skillbox{
-          height: 225px;
-          width: 20vw;
-          padding: 10px;
+          min-width: 15em;
+          min-height: 15em;
+          height: 15vh;
           transition: all .2s ease-in-out;
       }
       .skillbox:hover{
@@ -324,12 +368,6 @@
       }
     /* 2nd page – mapyapi */
     /* 3rd page – carousell */
-      .imagebox{
-          transition: all .2s ease-in-out;
-      }
-      .imagebox:hover{
-          transform: scale(1.1);
-      }
     /* 4th page – certifikaty */
       .certifikaty{
           flex-direction: row;
@@ -337,8 +375,6 @@
           align-items:center;
       }
       .certifikat{
-          width: 20vw;
-          height: 35vh;
       }
     /* 5th page – contactboxy */
       .contactboxy{
@@ -346,9 +382,8 @@
           justify-content: center;
           align-items: center;
       }
-
-      .contactbox{
-          order: 1;
+      .contactbox-text {
+        order: 1;
       }
       .contactbox-img {
           order: 0;
@@ -357,19 +392,20 @@
       }
   /* FOOTER */
 }
+
 @media print{
   @page{
     margin: 1.5cm;
   }
-  nav, .contactbox-img > img, .skillbox > picture, .cert-href, .certifikat > img {
+  nav, .contactbox-img > img, .skillbox > picture, .cert-href, .logo {
     display: none;
   }
 
-  .skillbox,.skillbox > h3, .cert-txt {
+  .skillbox,.skillbox > h3, .certifikat > .cert-txt {
     margin: 0;
     padding: 0;
   }
-  nav,.skillbox,header, .contactbox-img,.imagebox, .certifikat, .certifikat > img {
+  nav,.skillbox,header, .contactbox-img,.imagebox, .certifikat, .logo {
     border: 0;
     border-style: none;
     border-radius: 0px;

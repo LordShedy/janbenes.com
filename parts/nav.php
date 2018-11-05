@@ -1,12 +1,20 @@
 <nav>
-  <div class="brand">
-    <b>Jan Beneš - elektrika/voda</b>
-  </div>
+    <h1>Jan Beneš - elektrika/voda</h1>
     <ul>
-      <li><a href="./index.php" class="active" >O firmě</a></li>
-      <li><a href="./sidlo.php">Sídlo</a></li>
-      <li><a href="./prace.php">Ukázka práce</a></li>
-      <li><a href="./certifikaty.php">Certifikáty</a></li>
-      <li><a href="./kontakt.php">Kontakt</a></li>
+      <?php if($match == "index"){ ?> <li class="active">
+      <?php } else { ?> <li> <?php }?>
+      <a href="./index.php">O firmě</a></li>
+      <?php if($match == "sidlo"){ ?> <li class="active">
+      <?php } else { ?> <li> <?php }?>
+      <a href="./sidlo.php">Sídlo</a></li>
+      <?php if($match == "prace"){ ?> <li class="active">
+      <?php } else { ?> <li> <?php }?>
+      <a href="./prace.php">Ukázka práce</a></li>
+      <?php if($match == "certifikaty"){ ?> <li class="active">
+      <?php } else { ?> <li> <?php }?>
+      <a href="./certifikaty.php">Certifikáty</a></li>
+      <?php if($match == "kontakt"){ ?> <li class="active">
+      <?php } else { ?> <li> <?php }?>
+      <a href="./kontakt.php">Kontakt</a></li>
     </ul>
 </nav>

@@ -2,31 +2,22 @@
 include './parts/head.php';
 include './parts/nav.php';
  ?><header>
-        <h1>Dělám tyto služby</h1>
+        <h2>Dělám tyto služby</h2>
       </header>
       <main>
       <div class="skillboxy">
         <div class="skillbox">
-          <picture>
-            <source srcset="./img/icons/elektro.png">
-            <img src="./img/icons/elektro.png" alt="ikonka elektra">
-          </picture>
+            <img src="./img/icons/elektro.svg" alt="ikonka elektra">
           <h3>Elektroinstalace</h3>
           <p>Kompletní elektroinstalace.</p>
         </div>
         <div class="skillbox">
-          <picture>
-            <source srcset="./img/icons/vodo.png">
-            <img src="./img/icons/vodo.png" alt="ikonka vodoinstalace">
-          </picture>
+            <img src="./img/icons/vodo.svg" alt="ikonka vodoinstalace">
           <h3>Vodoinstalace</h3>
           <p>Kompletní vodoinstalace.</p>
         </div>
         <div class="skillbox">
-          <picture>
-            <source srcset="./img/icons/kanal.png">
-            <img src="./img/icons/kanal.png" alt="ikonka kanalizace">
-          </picture>
+            <img src="./img/icons/kanal.svg" alt="ikonka kanalizace">
           <h3>Kanalizace</h3>
           <p>Kompletní instalace kanalizace</p>
         </div>
@@ -34,26 +25,17 @@ include './parts/nav.php';
 
       <div class="skillboxy">
         <div class="skillbox">
-          <picture>
-            <source srcset="./img/icons/electrorev.png">
-            <img src="./img/icons/electrorev.png" alt="ikonka elektrorevize">
-          </picture>
+            <img src="./img/icons/electrorev.svg" alt="ikonka elektrorevize">
           <h3>Elektrorezive</h3>
           <p>Kontroly a revize spotřebičů a ručního nářadí.</p>
         </div>
         <div class="skillbox">
-          <picture>
-            <source srcset="./img/icons/boiler.png">
-            <img src="./img/icons/boiler.png" alt="ikonka bojleru">
-          </picture>
+            <img src="./img/icons/boiler.svg" alt="ikonka bojleru">
           <h3>Bojlery</h3>
           <p>Opravy a montáže bojlerů.</p>
         </div>
         <div class="skillbox">
-          <picture>
-            <source srcset="./img/icons/svitidla.png">
-            <img src="./img/icons/svitidla.png" alt="ikonka svitidla">
-          </picture>
+            <img src="./img/icons/svitidla.svg" alt="ikonka svitidla">
           <h3>Svítidla</h3>
           <p>Montáž svítidel v bytech a provozovnách.</p>
         </div>
