@@ -7,9 +7,9 @@ include './parts/nav.php';
       </header>
       <main>
         <div id="m"></div>
-        <script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
-        <script type="text/javascript">Loader.load(null, {pano: true});</script>
-        <script type="text/javascript" src="./js/mapyapi.js"></script>
+        <script src="https://api.mapy.cz/loader.js"></script>
+        <script>Loader.load(null, {pano: true});</script>
+        <script src="./js/mapyapi.js"></script>
 <?php
 include './parts/foot.php';
  ?>
