@@ -20,6 +20,7 @@ include './parts/nav.php';
         <div class="contactbox-img">
           <img src="./img/profile.jpg" alt="obr">
         </div>
+      </div>
 <?php
 include './parts/foot.php';
  ?>

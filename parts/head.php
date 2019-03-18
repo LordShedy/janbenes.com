@@ -10,7 +10,7 @@ $match = $match[1];
     <meta name="description" content="Web živnostníka Jana Beneše.">
     <meta name="keywords" content="elektikář, elektrikar, elektrika">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php if($match == "index"){ ?> <title>Jan Beneš – o firmě</title><?php } ?>
+    <?php if($match == "index" or $match == null){ ?> <title>Jan Beneš – o firmě</title><?php } ?>
     <?php if($match == "sidlo"){ ?> <title>Jan Beneš – sídlo </title><?php } ?>
     <?php if($match == "prace"){ ?> <title>Jan Beneš – ukázka práce</title><?php } ?>
     <?php if($match == "certifikaty"){ ?> <title>Jan Beneš – moje certifikáty</title><?php } ?>
